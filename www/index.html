@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>HTML5 Audio</title>
+</head>
+  
+<style>
+.button {
+    
+    background-color: #33FF22;
+    border: 10%;
+    color: white;
+    text-align: center;
+    font-size: 80%;
+        width: 70vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+}
+body {
+    background-color: #533BFF;
+}
+  
+.centro {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center
+}
+  
+</style>
+
+<body>  
+  
+  <audio id="do" src="pastaAudio/do.wav"></audio>
+  <audio id="re" src="pastaAudio/re.wav"></audio>
+  <audio id="mi" src="pastaAudio/mi.wav"></audio>
+  <audio id="fa" src="pastaAudio/fa.wav"></audio>
+  <audio id="sol" src="pastaAudio/sol.wav"></audio>
+  <audio id="la" src="pastaAudio/la.wav"></audio>
+  <audio id="si" src="pastaAudio/do_oitava.wav"></audio>
+  
+<div class="centro">
+  
+  <button class="button" onclick="document.getElementById('do').play()">DÓ</button>
+  <button class="button" onclick="document.getElementById('re').play()">RÉ</button>
+  <button class="button" onclick="document.getElementById('mi').play()">MI</button>
+  <button class="button" onclick="document.getElementById('fa').play()">FÁ</button>
+  <button class="button" onclick="document.getElementById('sol').play()">SOL</button>
+  <button class="button" onclick="document.getElementById('la').play()">LÁ</button>
+  <button class="button" onclick="document.getElementById('si').play()">SÍ</button>
+  
+  
+  <!--
+  <button onclick="document.getElementById('si''do''re').volume+=0.1">Aumentar o volume</button>
+  <button onclick="document.getElementById('si''do''re').volume-=0.1">Diminuir o volume</button>
+  -->
+</div>
+</body>
+
+</html>
